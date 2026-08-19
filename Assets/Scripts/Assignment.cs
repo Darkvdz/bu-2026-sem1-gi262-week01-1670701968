@@ -5,7 +5,7 @@ public class Assignment : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // As01_CheckNumberSign();
+        As01_CheckNumberSign();
         // As02_GetDayName();
         // As03_ValidatePassword();
         // As04_GetGrade();
@@ -23,7 +23,19 @@ public class Assignment : MonoBehaviour
     {
         // TODO: Implement logic to determine sign
         // Example: Debug.Log("Positive");
-        throw new System.NotImplementedException();
+
+        if (as01Number > 0)
+        {
+            Debug.Log("Positive");
+        }
+        else if (as01Number < 0)
+        {
+            Debug.Log("Negative");
+        }
+        else
+        {
+            Debug.Log("Zero");
+        }
     }
 
     public int as02Day;
@@ -110,3 +122,5 @@ public class Assignment : MonoBehaviour
         throw new System.NotImplementedException();
     }
 }
+
+
