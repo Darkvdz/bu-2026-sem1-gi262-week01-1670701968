@@ -6,7 +6,7 @@ public class Assignment : MonoBehaviour
     void Start()
     {
         As01_CheckNumberSign();
-        // As02_GetDayName();
+        As02_GetDayName();
         // As03_ValidatePassword();
         // As04_GetGrade();
         // As05_IsLeapYear();
@@ -43,7 +43,34 @@ public class Assignment : MonoBehaviour
     {
         // TODO: Implement logic to return day name
         // Example: Debug.Log("Monday");
-        throw new System.NotImplementedException();
+
+        switch(as02Day)
+        {
+            case 1:
+                Debug.Log("Monday");
+                break;
+            case 2:
+                Debug.Log("Tuesday");
+                break;
+            case 3:
+                Debug.Log("Wednesday");
+                break;
+            case 4:
+                Debug.Log("Thursday");
+                break;
+            case 5:
+                Debug.Log("Friday");
+                break;
+            case 6:
+                Debug.Log("Saturday");
+                break;
+            case 7:
+                Debug.Log("Sunday");
+                break;
+            default:
+                Debug.Log("Invalid day");
+                break;
+        }
     }
 
     public string as03InputPassword;
