@@ -142,13 +142,13 @@ public class Assignment : MonoBehaviour
         switch (as06Op)
         {
             case '+':
-                Debug.Log("Result : " + (as06Num1 + as06Num2));
+                Debug.Log("Result: " + (as06Num1 + as06Num2));
                 break;
             case '-':
-                Debug.Log("Result : " + (as06Num1 - as06Num2));
+                Debug.Log("Result: " + (as06Num1 - as06Num2));
                 break;
             case '*':
-                Debug.Log("Result : " + (as06Num1 * as06Num2));
+                Debug.Log("Result: " + (as06Num1 * as06Num2));
                 break;
             case '/':
                 if (as06Num2 == 0)
@@ -157,7 +157,7 @@ public class Assignment : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Result : " + (as06Num1 / as06Num2));
+                    Debug.Log("Result: " + (as06Num1 / as06Num2));
                 }
                 break;
             default:
@@ -168,13 +168,12 @@ public class Assignment : MonoBehaviour
 
     public int as07Month;
     public void As07_GetSeason()
-    {
-       
+    { 
         if (as07Month >= 1 && as07Month <= 12)
         {
             if (as07Month == 12 || as07Month == 1 || as07Month == 2)
             {
-                Debug.Log("It's Winter");
+                Debug.Log("It's Winter.");
             }
             else if (as07Month >= 3 && as07Month <= 5)
             {
@@ -204,21 +203,21 @@ public class Assignment : MonoBehaviour
         {
             if (as08Payment >= as08Price)
             {
-                Debug.Log(" You have received the product.");
+                Debug.Log("คุณได้รับสินค้าแล้ว");
 
                 if (as08Payment > as08Price)
                 {
-                    Debug.Log("You received your change. " + (as08Payment - as08Price));
+                    Debug.Log("คุณได้รับเงินทอน " + (as08Payment - as08Price) + " บาท");
                 }
             }
             else
             {
-                Debug.Log("You do not have enough money.");
+                Debug.Log("คุณมีเงินไม่พอ");
             }
         }
         else
         {
-            Debug.Log("Out of Stock");
+            Debug.Log("สินค้าหมด");
         }
     }
 
@@ -230,28 +229,28 @@ public class Assignment : MonoBehaviour
         {
             if ((as09UserChoice == as09ComputerChoice))
             {
-                Debug.Log("Draw");
+                Debug.Log("เสมอ");
             }
             else if ((as09UserChoice == 0) && (as09ComputerChoice == 2))
             {
-                Debug.Log("You Win!");
+                Debug.Log("คุณชนะ!");
             }
             else if ((as09UserChoice == 1) && (as09ComputerChoice == 0))
             {
-                Debug.Log("You Win!");
+                Debug.Log("คุณชนะ!");
             }
             else if ((as09UserChoice == 2) && (as09ComputerChoice == 1))
             {
-                Debug.Log("You Win!");
+                Debug.Log("คุณชนะ!");
             }
             else
             {
-                Debug.Log("You Lose!");
+                Debug.Log("คุณแพ้!");
             }
         }
         else
         {
-            Debug.Log("Please Choose the correct number.");
+            Debug.Log("กรุณาเลือกเป็นตัวเลขที่ถูกต้อง");
         }
     }
 
