@@ -7,7 +7,7 @@ public class Assignment : MonoBehaviour
     {
         As01_CheckNumberSign();
         As02_GetDayName();
-        // As03_ValidatePassword();
+        As03_ValidatePassword();
         // As04_GetGrade();
         // As05_IsLeapYear();
         // As06_Calculate();
@@ -79,7 +79,17 @@ public class Assignment : MonoBehaviour
     {
         // TODO: Implement password validation logic
         // Example: Debug.Log("True");
-        throw new System.NotImplementedException();
+
+        if (as03InputPassword == as03CorrectPassword)
+        {
+            Debug.Log("True");
+        }
+        else
+        {
+            Debug.Log("False");
+        }
+      
+        
     }
 
     public int as04Score;
